@@ -1,30 +1,25 @@
-class Details
-{
-  String name="Vivo-Y87";
-  int storage=64;
-  String cameratype="Dual Camera";
-  public void performance(int ram)
- {
-  System.out.println("Inside of the 1st Method.......");
-     System.out.println("Name of the Mobile is:"+name);
-     System.out.println("Internal Storage of the Mobile is:"+storage+"GB");
-     System.out.println("Ram of the Mobile is:"+ram+"GB");
-     System.out.println("Camera type of the Mobile is:"+cameratype);
-  }
-        public void performance(String os,double version)
-        {
-   System.out.println("Inside of the 2nd Method....");
-   System.out.println("The os of the mobile is:"+os);
-          System.out.println("Version of the mobile is:"+version);
-        }
-}
-public class Mobile
-{
-  public static void main(String args[])
-   {
-       System.out.println("The Mobile Details are:");
-       Details d=new Details();
-                  d.performance(8);
-                  d.performance("Android",8.10);
-   }
-}
+public class Sum { 
+
+	public int sum(int x, int y) 
+	{ 
+		return (x + y); 
+	} 
+
+	public int sum(int x, int y, int z) 
+	{ 
+		return (x + y + z); 
+	} 
+
+	public double sum(double x, double y) 
+	{ 
+		return (x + y); 
+	} 
+
+	public static void main(String args[]) 
+	{ 
+		Sum s = new Sum(); 
+		System.out.println(s.sum(10, 20)); 
+		System.out.println(s.sum(10, 20, 30)); 
+		System.out.println(s.sum(10.5, 20.5)); 
+	} 
+} 
